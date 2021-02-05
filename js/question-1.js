@@ -2,4 +2,4 @@
 
 const division = (a, b) => a % b;
 
-console.log(division(4, 3));
+// console.log(division(4, 3));

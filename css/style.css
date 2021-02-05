@@ -1,3 +1,17 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: pink;
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid pink;

@@ -21,9 +21,9 @@ async function items() {
                 break;
             }
 
-            resultsContainer.innerHTML += `<div>Name: ${details[i].name}
-                                            Rating: ${details[i].rating}
-                                            Tags: 
+            resultsContainer.innerHTML += `<div class="games"><h4>Name: ${details[i].name}</h4>
+                                            <p>Rating: ${details[i].rating}</p>
+                                            <p>Tags: </p>
                                         </div>`;
         }
     }

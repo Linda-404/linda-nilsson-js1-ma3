@@ -10,12 +10,9 @@ async function items() {
         const results = await response.json();
         const details = results.results;
 
-        // console.log(results.results);
-
         resultsContainer.innerHTML = "";
 
         for(let i = 0; i < details.length; i++) {
-            console.log(details[i]);
 
             if (i === 8) {
                 break;
@@ -23,7 +20,7 @@ async function items() {
 
             resultsContainer.innerHTML += `<div class="games"><h4>Name: ${details[i].name}</h4>
                                             <p>Rating: ${details[i].rating}</p>
-                                            <p>Tags: </p>
+                                            <p>Tags: ${details[i].tags.length}</p>
                                         </div>`;
         }
     }
